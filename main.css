@@ -1,0 +1,196 @@
+html, body {
+  font-size: 20px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #023;
+}
+
+#container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+#top {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  /* position: fixed; */
+  top: 0px;
+  left: 0px;
+}
+
+#companyInfo {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+#companyInfo a {
+  font-size: 20px;
+  background-color: #039;
+  border: 2px solid #039;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+#companyInfo a:hover {
+  color: #fff;
+}
+
+#navigation ul {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul li {
+  margin: auto 10px;
+  display: inline;
+}
+
+#navigation ul li a {
+  padding: 8px;
+}
+
+#navigation {
+  height: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#center {
+  height: 1500px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  border-top: 2px groove white;
+  border-bottom: 2px groove white;
+}
+
+#left {
+  width: 20%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 10px;
+  border-right: 2px dotted white;
+}
+
+#left h1 {
+  color: #ccc;
+}
+
+#bestseller{
+  width: 80%;
+}
+
+#bestseller h2, h3{
+  color: #bbb;
+  margin: 2px 0px 0px 0px;
+}
+
+#leftImage {
+  width: 100%;
+  font: 24px;
+  color: white;
+}
+
+
+#main {
+  height: 1500px;
+  width: 80%;
+}
+
+#footer {
+  height: 50px;
+}
+
+/* This is not my code, i may change it in future */
+
+a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #2196f3;
+  background-color: #023;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #255728;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 1s;
+}
+
+a span {
+  position: absolute;
+  display: block;
+}
+
+a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+
+a span:nth-child(3) {
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
