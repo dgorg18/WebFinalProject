@@ -1,0 +1,22 @@
+#center {
+  /* height: 180vh; */
+  position: relative;
+  /* height: 100%; */
+  /* width: 100%; */
+}
+
+
+#contacts {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+
+}
+#contacts h1{
+  font-size: 5vmin;
+  color: #fcb;
+}
+
+#contacts ul{
+  list-style-type: none;
+}
