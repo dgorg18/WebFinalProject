@@ -81,7 +81,7 @@ html, body {
   display: block;
 }
 
-#box input[type="submit"] {
+#box button {
   background: transparent;
   border: none;
   outline: none;

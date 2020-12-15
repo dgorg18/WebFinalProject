@@ -17,24 +17,20 @@
         <a href="main.html"><h2 id = "goBack">Go Back To Main</h2></a>
         <h2>Registration </h2>
         <form action="#SignUpAction" method="GET">
-          <div class="inputBox">
-            <input type="text" name="" required=""/>
-            <label>Username</label>
-           </div>
            <div class="inputBox">
-             <input type="text" name="" required=""/>
+             <input type="text" name="" required="" id = "email"/>
              <label>Email</label>
             </div>
            <div class="inputBox">
-             <input type="password" name = "" required="" />
+             <input type="password" name = "" required="" id = "password" />
              <label>Password</label>
             </div>
             <div class="inputBox">
-              <input type="password" name = "" required="" />
+              <input type="password" name = "" required="" id = "passwordRepeat" />
               <label>Repeat Password</label>
              </div>
           <div id = "rightButtons">
-            <input type="submit" name="" value="Sign Up"/>
+            <button  onclick="signUp()">Sign Up</button>
             <a href="login.html" id ="signInButton">Go back to Sign In</a>
           </div>
         </form>
@@ -45,5 +41,7 @@
 
 
  </div>
+
+<script src="../JS/registration.js"></script>
   </body>
 </html>

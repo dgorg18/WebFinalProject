@@ -3,6 +3,8 @@
 
 <head>
   <title>Main Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="../CSS/Login/login.css">
 </head>
 
@@ -14,16 +16,16 @@
       <h2>Login </h2>
       <form action="#Action" method="GET">
         <div class="inputBox">
-          <input type="text" name="" required="" />
-          <label>Username</label>
+          <input type="text" name="" required="" id="email"/>
+          <label>Email</label>
         </div>
         <div class="inputBox">
-          <input type="password" name="" required="" />
+          <input type="password" name="" required="" id="password"/>
           <label>Password</label>
         </div>
         <a href="#ForgotPass">Forgot Password?</a>
         <div id="rightButtons">
-          <input type="submit" name="" value="Sign In" />
+          <button onclick = "login()" >Sign In</button>
           <a href="registration.html" id="signUpButton">Sign Up</a>
         </div>
       </form>
@@ -34,6 +36,10 @@
 
 
   </div>
+
+  <script src="../JS/login.js">
+
+  </script>
 </body>
 
 </html>
