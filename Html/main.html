@@ -3,22 +3,37 @@
 
 <head>
   <title>Main Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="../CSS/Main/main-mobile.css">
   <link rel="stylesheet" href="../CSS/Main/main-tablet.css">
   <link rel="stylesheet" href="../CSS/Main/main.css">
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+  <script src="../JS/app.js"></script>
+  <script src="../JS/main.js"></script>
+
 </head>
 
 <body>
   <div id="container">
     <div id="top">
       <div id="companyInfo">
-        <a href="login.html"> Login
+        <a href="registration.html" id = "logout"> Log Out
           <span> </span>
           <span> </span>
           <span> </span>
           <span> </span>
         </a>
-        <a href="registration.html"> Register
+        <a href="login.html" id = "login"> Login
+          <span> </span>
+          <span> </span>
+          <span> </span>
+          <span> </span>
+        </a>
+        <a href="registration.html" id = "register"> Register
           <span> </span>
           <span> </span>
           <span> </span>
@@ -86,7 +101,6 @@
     </footer>
   </div>
 
-<script src = "app.js"> </script>
 </body>
 
 </html>

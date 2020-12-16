@@ -1,3 +1,10 @@
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    window.location.replace("main.html");
+  } 
+});
+
+
 function signUp() {
 
   let userEmail = document.getElementById("email").value;
@@ -25,6 +32,7 @@ function checkPasswordIsHardEnough(password){
 function registerUser(email, password) {
   firebase.auth().createUserWithEmailAndPassword(email, password)
   .then((user) => {
+    window.location.replace("main.html");
     alert(user + "  " + password);
   })
   .catch((error) => {

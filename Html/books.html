@@ -3,10 +3,22 @@
 <html>
 
 <head>
+  <title>Books</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="../CSS/Main/main-mobile.css">
   <link rel="stylesheet" href="../CSS/Main/main-tablet.css">
   <link rel="stylesheet" href="../CSS/Main/main.css">
   <link rel="stylesheet" href="../CSS/Books/books.css">
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+  <script src="../JS/app.js"></script>
+  <script src="../JS/main.js"></script>
+  <script src="../JS/books.js"> </script>
+
 
 </head>
 
@@ -14,13 +26,19 @@
   <div id="container">
     <div id="top">
       <div id="companyInfo">
-        <a href="login.html"> Login
+        <a href="registration.html" id = "logout"> Log Out
           <span> </span>
           <span> </span>
           <span> </span>
           <span> </span>
         </a>
-        <a href="registration.html"> Register
+        <a href="login.html" id = "login"> Login
+          <span> </span>
+          <span> </span>
+          <span> </span>
+          <span> </span>
+        </a>
+        <a href="registration.html" id = "register"> Register
           <span> </span>
           <span> </span>
           <span> </span>
@@ -57,7 +75,7 @@
               <span> </span>
             </a>
           </li>
-          <li><a href="futureReleases.html"> Contact
+          <li><a href="contacts.html"> Contact
               <span> </span>
               <span> </span>
               <span> </span>
@@ -66,6 +84,10 @@
           </li>
         </ul>
       </div>
+      <div id= "searchKey">
+        <h1 id="search-title"> Some Books </h1>
+      </div>
+
     </div>
 
     <div id="center">
@@ -73,21 +95,20 @@
         <input type="text" placeholder="Search...">
         <div class="search"></div>
       </div>
-      <h1 id="search-title" "> Some Books </h1>
-      <div class=" book-list" id="book-list">
-        <div class="row">
-          <!-- Each Row Of Books -->
+      <div class="book-list" id="book-list">
+        <div class="row" id = "row">
+
         </div>
     </div>
   </div>
 
 
   <footer id="footer">
-    <h6>© Copyright </h6>
+    <h1>Website is still in a test mode.</h1>
+    <h6> © Copyright </h6>
   </footer>
   </div>
 
-  <script src="..JS/books.js"> </script>
 </body>
 
 </html>

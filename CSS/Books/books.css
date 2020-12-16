@@ -11,14 +11,21 @@
   height: 100vh;
   padding: 24px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row;
   align-items: flex-start;
   position: relative;
+  overflow: auto;
 }
 
 #search-title{
+  border-top: dotted white 1px;
   color: #fcb;
+  margin: 10px auto;
+  text-align: center;
 }
+
+
+
 
 
 .searchBox {
@@ -132,4 +139,61 @@
   color: white;
   opacity: 0.5;
   font-weight: bolder;
+}
+
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10vmin;
+}
+.row {
+  font: "cursive";
+  display: flex;
+  width: 50vw;
+  flex-flow: column nowrap;
+
+}
+
+.row-container {
+  margin: 10px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-flow: row;
+  background: crimson;
+  border-radius: 2vmin;
+}
+
+.row-info {
+  margin-left: 6vmin;
+  width: 100%;
+}
+
+..row-info h1 {
+  font-size: 10vw;
+}
+
+.row-info h3 {
+  margin-left: 4vmin;
+}
+
+
+.row-info h5 {
+  margin-left: 8vmin;
+}
+
+.row-info a {
+  width: 100%;
+  background: #fcb;
+  border-radius: 10vmin;
+}
+#footer h1, h6{
+  color: #fcb;
+}
+
+
+
+#footer {
+  margin: 12px;
 }
