@@ -1,0 +1,45 @@
+
+
+/* #logout{
+  display: none;
+} */
+/*
+#login {
+  display: none;
+}
+
+#register {
+  display: none;
+} */
+
+#center {
+  height: 80vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  align-items: flex-start;
+}
+
+
+#login-logout{
+  display: flex;
+  flex-flow: column nowrap;
+  align-self: flex-end;
+}
+
+#logout {
+  color: #fcb;
+}
+#login-logout #login,
+#login-logout #register{
+    animation-name: flash;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: #023;}
+    to {color: #fcb;}
+}

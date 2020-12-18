@@ -9,7 +9,7 @@
     font-size: 10px;
     width: 100vw;
     height: 100vh;
-    margin: 0 auto;
+
     background-color: #023;
   }
 
@@ -80,7 +80,7 @@
     flex-flow: row nowrap;
     justify-content: center;
     border-top: 2px groove white;
-    border-bottom: 2px groove white;
+    /* border-bottom: 2px groove white; */
   }
 
   #left {
@@ -89,12 +89,13 @@
 
 
   #main {
-    height: 100%;
+    height: 100vh;
     width: 80%;
   }
 
   #footer {
-    height: 5vh;
+    display: none;
+    /* height: 15vh; */
   }
 
 

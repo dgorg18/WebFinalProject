@@ -1,35 +1,28 @@
-html, body {
-  font-size: 20px;
-  width: 100vw;
+#addQuestionBox {
   height: 100vh;
-  margin: 0 auto;
-  background: url(Images/loginBackground.jpg);
-  background-size: cover;
-}
-
-#container {
+  width: 100vw;
+  margin: auto;
   display: flex;
-  flex-flow: column nowrap;
   justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-#box a #goBack {
-  color: #0ff;
+#footer {
+  height: 10vh;
+  width: 100vw;
 }
 
 #box {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 30vw;
+  position: relative;
+  width: 60vw;
+  height: 60%;
   padding: 10vmin;
-  background: rgba(0, 0, 0, .8);
+  background: #ca8;
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
   border-radius: 15px;
 }
-
 #box h2 {
   margin: 0 0 5vmin;
   padding: 0;
@@ -64,8 +57,7 @@ html, body {
 }
 
 #box .inputBox input:focus~label,
-#box .inputBox input:valid~label
- {
+#box .inputBox input:valid~label {
   left: 0;
   top: -20px;
   color: #03a9f5;
@@ -87,43 +79,12 @@ html, body {
   border: none;
   outline: none;
   font-size: 4vmin;
-  color: #fff;
-  background: #023;
+  color: crimson  ;
   padding: 10px;
   cursor: pointer;
   border-radius: 10px;
 }
 
-#box #signUpButton {
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 4vmin;
-  color: #fff;
-  background: #023;
-  text-decoration: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-#box a {
-  font-size: 3vmin;
-  color: #0fffff;
-  text-decoration: none;
-}
-
-#box a:hover {
-  color: #a00;
-  cursor: pointer;
-}
-
-#footer {
-  height: 10vh;
-  position: fixed;
-  bottom: 10%;
-  margin: 0px 25px;
-  color: red;
-  flex-flow: row-reverse nowrap;
-  justify-content: flex-start;
+#box button:hover{
+  color: #023;
 }

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../CSS/Main/main-mobile.css">
   <link rel="stylesheet" href="../CSS/Main/main-tablet.css">
   <link rel="stylesheet" href="../CSS/Main/main.css">
+  <link rel="stylesheet" href="../CSS/Discussions/discussions.css">
 
   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
@@ -25,19 +26,7 @@
   <div id="container">
     <div id="top">
       <div id="companyInfo">
-        <a href="registration.html" id = "logout"> Log Out
-          <span> </span>
-          <span> </span>
-          <span> </span>
-          <span> </span>
-        </a>
-        <a href="login.html" id = "login"> Login
-          <span> </span>
-          <span> </span>
-          <span> </span>
-          <span> </span>
-        </a>
-        <a href="registration.html" id = "register"> Register
+        <a href="profile.html" id = "profile"> Profile
           <span> </span>
           <span> </span>
           <span> </span>
@@ -84,25 +73,81 @@
         </ul>
       </div>
     </div>
+    <div id = "middle">
 
+        <a id="addQuestion" href="addQuestion.html"> Add Question
+          <span> </span>
+          <span> </span>
+          <span> </span>
+          <span> </span>
+        </a>
+
+    </div>
     <div id="center">
-      <div id="left">
-        <h1>Today's Pick</h1>
-        <div id="bestseller">
-          <img src="book_example.png" alt="No Image" id="leftImage">
-          <h3> Author: author </h3>
-          <h2> Bookname </h2>
+
+      <div class="topic-list" id="topic-list">
+        <div class="row" id="row">
+          <div class="row-container">
+            <div class="row-info">
+              <h4 class="question_author">Author</h4>
+              <h1 class="book-title">Book title</h1>
+              <p class="question">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="row">
+          <div class="row-container">
+            <div class="row-info">
+              <h4 class="question_author">Author</h4>
+              <h1 class="book-title">Book title</h1>
+              <p class="question">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="row">
+          <div class="row-container">
+            <div class="row-info">
+              <h4 class="question_author">Author</h4>
+              <h1 class="book-title">Book title</h1>
+              <p class="question">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="row">
+          <div class="row-container">
+            <div class="row-info">
+              <h4 class="question_author">Author</h4>
+              <h1 class="book-title">Book title</h1>
+              <p class="question">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="row">
+          <div class="row-container">
+            <div class="row-info">
+              <h4 class="question_author">Author</h4>
+              <h1 class="book-title">Book title</h1>
+              <p class="question">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div id="main">
-        <div id = "contact">
-          <ul>
-            <li><h1>Telephone: 555-1200</h1> </li>
-            <li><h1>Email: kelpieB@gmail.com</h1></li>
-            <li><h3>Call us only at night. We sleep during days.</h3></li>
-          </ul>
-        </div>
-      </div>
+
     </div>
 
 
@@ -113,4 +158,5 @@
 
 
 </body>
+
 </html>

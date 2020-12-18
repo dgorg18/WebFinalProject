@@ -1,0 +1,102 @@
+#center {
+  overflow: auto;
+  height: 200vh;
+}
+
+#middle {
+  border-top: solid 1px  white;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-flow: column;
+}
+
+#addQuestion{
+  color: #fcb;
+}
+
+#addQuestion:hover{
+  cursor: progress;
+}
+
+
+.row {
+  font: "cursive";
+  display: flex;
+  width: 80vw;
+  height: 50vh;
+  flex-flow: column nowrap;
+
+
+}
+.row-container:hover {
+  transform: scale(1.05);
+  background: #fcb;
+  cursor: pointer;
+  animation-name: colorChange;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+  /* animation-direction: alternate; */
+  animation-play-state: running;
+}
+
+@keyframes colorChange {
+      from {background: crimson;}
+      50% { transform: scale(1.06);}
+      to {background: #fcb;  }
+}
+
+.row-container:hover h1{
+  color: crimson;
+
+}
+
+
+.row-container:hover h4{
+  color: #023;
+}
+
+a:hover{
+  transform: scale(1.15);
+}
+
+
+
+.row-container {
+  margin-top: 10px;
+  width: 100%;
+  padding: 3vmin;
+  display: flex;
+  flex-flow: row;
+  background: crimson;
+  border-radius: 2vmin;
+}
+
+.row-info {
+  position: relative;
+  width: 100%;
+}
+
+.row-info h1 {
+  /* margin: 0; */
+  margin-left: 4vmin;
+  color: #fcb;
+  /* position: absolute; */
+  /* font-size: 10vw; */
+}
+
+.row-info h4 {
+  color: #023;
+  margin: 0;
+}
+
+
+.row-info h5 {
+  margin-left: 8vmin;
+}
+
+.row-info a {
+  width: 100%;
+  background: #fcb;
+  border-radius: 10vmin;
+}

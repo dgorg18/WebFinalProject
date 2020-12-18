@@ -1,3 +1,32 @@
+
+@media only screen and (max-width: 768px) {
+  #center {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+  }
+
+  #left {
+    display: block;
+    width: 100vw;
+    height: 250vh !important;
+
+  }
+}
+
+h2 {
+  font-family: cursive;
+}
+textarea{
+  font-family: cursive;
+}
+textarea::placeholder{
+  color: #023;
+  font-family: cursive;
+}
+
 #center {
   /* height: 180vh; */
   position: relative;
@@ -13,10 +42,94 @@
 
 }
 #contacts h1{
-  font-size: 5vmin;
+  font-size: 3vmin;
   color: #fcb;
 }
 
 #contacts ul{
   list-style-type: none;
+}
+
+#left {
+  width: 60%;
+}
+
+textarea {
+  width: 80%;
+	height: 20vh;
+  font-family:  sans-serif, monospace;
+  font-style: bold;
+  font-size: 18px;
+  resize: none;
+  font-weight: bolder;
+}
+
+#box {
+  position: relative;
+  padding: 10vmin;
+  background: crimson;
+  border-radius: 10vmin;
+}
+
+
+
+#box .inputBox {
+  position: relative;
+}
+
+#box .inputBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 5vmin;
+  color: #023;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+#box .inputBox label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px 0;
+  font-size: 4vmin;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+#box .inputBox input:focus~label,
+#box .inputBox input:valid~label{
+  left: 0;
+  top: -20px;
+  color: #03a9f5;
+  font-size: 3vmin;
+}
+
+#box #rightButtons {
+  position: absolute;
+
+  right: 10px;
+  bottom: 10px;
+}
+
+
+#box button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 4vmin;
+  color: #023;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#box button:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  color: #fcb;
+}
+#left  {
+  border: none;
 }
