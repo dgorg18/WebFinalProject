@@ -1,19 +1,29 @@
-firebase.auth().onAuthStateChanged(function(user) {
-  let loginDiv = document.getElementById("login-logout");
-  let center = document.getElementById("center");
-  if (user) {
 
-    loginDiv.innerHTML = userLoggedIn();
+let auth = firebase.auth();
 
-  } else {
-    loginDiv.innerHTML = userLoggedOut();
-    center.innerHTML = notLoggedInText();
-  }
+
+auth.onAuthStateChanged(function(user) {
+    let loginDiv = document.getElementById("login-logout");
+    let center = document.getElementById("center");
+
+
+    if (user) {
+
+      loginDiv.innerHTML = userLoggedIn();
+      let logoutButton = document.getElementById('logout');
+      logoutButton.onclick = function() {
+            auth.signOut().then(() => {
+              window.location.replace("main.html");
+            });
+      };
+    } else {
+      loginDiv.innerHTML += userLoggedOut();
+      center.innerHTML += notLoggedInText();
+    }
 });
 
 function notLoggedInText() {
-  let text = Node();
-  
+
   return `<h1 id="not-logged-in">You're not logged in.</h1>`;
 };
 
@@ -34,7 +44,7 @@ function userLoggedOut(){
 };
 
 function userLoggedIn(){
-return `<a href="registration.html" id="logout"> Log Out
+return `<a href="#" id="logout"> Log Out
           <span> </span>
           <span> </span>
           <span> </span>

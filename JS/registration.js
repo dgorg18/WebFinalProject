@@ -1,7 +1,7 @@
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     window.location.replace("main.html");
-  } 
+  }
 });
 
 
@@ -30,15 +30,25 @@ function checkPasswordIsHardEnough(password){
 }
 
 function registerUser(email, password) {
-  firebase.auth().createUserWithEmailAndPassword(email, password)
+  let auth = firebase.auth();
+  let username = document.getElementById("username");
+  auth.createUserWithEmailAndPassword(email, password)
   .then((user) => {
+    user.updateProfile({
+      displayName: userName
+    }).then(function() {
+      console.log("Update successful.");
+    }).catch(function() {
+      console.log("An Error Happened.");
+    });
+
+
     window.location.replace("main.html");
-    alert(user + "  " + password);
   })
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
     // ..
-    alert(errorCode + "  " + errorMessage);
+    alert(errorMessage);
   });
 }

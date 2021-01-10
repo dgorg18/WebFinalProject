@@ -1,17 +1,3 @@
-
-
-/* #logout{
-  display: none;
-} */
-/*
-#login {
-  display: none;
-}
-
-#register {
-  display: none;
-} */
-
 #center {
   height: 80vh;
   display: flex;
@@ -33,9 +19,9 @@
 #login-logout #login,
 #login-logout #register{
     animation-name: flash;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate-reverse;
     animation-play-state: running;
 }
 

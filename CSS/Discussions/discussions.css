@@ -13,6 +13,7 @@
 
 #addQuestion{
   color: #fcb;
+  display: none;
 }
 
 #addQuestion:hover{
@@ -64,7 +65,7 @@ a:hover{
 
 .row-container {
   margin-top: 10px;
-  width: 100%;
+  width: 70vw;
   padding: 3vmin;
   display: flex;
   flex-flow: row;

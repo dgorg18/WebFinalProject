@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   var item, tile, author, publisher, bookLink, bookImg;
   let apiKey = "AIzaSyBwUrLy1xEhlvB98kKv_RIo9_O6D3aoBT4";
-  let searchString = "sherlock";
+  let searchString = "uncle thomas";
   let a = fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchString}&maxResults=40&key=${apiKey}`);
   let row = document.getElementById("row");
   a.then(response => response.json())

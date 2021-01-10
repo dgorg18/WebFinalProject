@@ -1,4 +1,4 @@
-let row = `<div class="row" id="row">
+let row = `
             <div class="row-container">
               <div class="row-info">
                 <h4 class="question_author">Author</h4>
@@ -8,5 +8,19 @@ let row = `<div class="row" id="row">
                   printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
               </div>
-            </div>
-          </div>`;
+            </div>`;
+
+
+let auth = firebase.auth();
+
+
+auth.onAuthStateChanged(function(user) {
+    let element = document.getElementById('addQuestion');
+    
+    if (user) {
+      console.log(user);
+      element.style.display = 'block';
+    } else {
+      element.style.display = 'none';
+    }
+});

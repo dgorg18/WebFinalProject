@@ -15,8 +15,9 @@
 
   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
-  <!-- <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script> -->
   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-database.js"></script>
+
   <script src="../JS/app.js"></script>
   <script src="../JS/main.js"></script>
 
@@ -77,7 +78,7 @@
 
       <div id = "addQuestionBox">
         <div id="box">
-          <h2>Login </h2>
+          <h2>Add Question</h2>
           <form action="#Action" method="GET">
             <div class="inputBox">
               <input type="text" name="" required="" id="BookName"/>
@@ -88,7 +89,7 @@
               <label>Question</label>
             </div>
             <div id="rightButtons">
-              <button id="submitButton">Submit</button>
+              <button id="submitButton" onclick = "submit();">Submit</button>
             </div>
           </form>
         </div>
@@ -102,6 +103,8 @@
     </footer>
   </div>
 
+
+  <script src="../JS/addQuestion.js"></script>
 
 </body>
 

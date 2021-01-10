@@ -4,6 +4,7 @@ var firebaseConfig = {
   apiKey: "AIzaSyAW5tFnZjIXDGu6xqlMV2a1ggUW371d0Iw",
   authDomain: "finalwebproject-5603e.firebaseapp.com",
   projectId: "finalwebproject-5603e",
+  databaseURL: "https://finalwebproject-5603e-default-rtdb.europe-west1.firebasedatabase.app",
   storageBucket: "finalwebproject-5603e.appspot.com",
   messagingSenderId: "983510090217",
   appId: "1:983510090217:web:13c7af5336187363e58b78",

@@ -1,4 +1,8 @@
 
+#box {
+  height: 90vh;
+  width: 400px;
+}
 
 #box #rightButtons {
 
@@ -6,8 +10,8 @@
   right: 10px;
   bottom: 10px;
 
-    display: flex;
-    flex-flow: row nowrap;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 #box button
