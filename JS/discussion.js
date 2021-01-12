@@ -29,9 +29,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       createElement(author,title,question, id);
     }
   });
-  // questionObj.on('child_removed', (data) => {
-  //   deleteComment(postElement, data.key);
-  // });
 
 });
 

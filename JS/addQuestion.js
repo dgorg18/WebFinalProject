@@ -15,6 +15,10 @@ submitButton.onclick = function submitAction(){
           userName: user.displayName,
           bookName: bookName,
           question: question
+        }).then(() => {
+          window.history.back();
+        }).catch(() => {
+          alert("Error. Couldn't Access Database.")
         });
     } else {
       console.log("User not logged in.");
