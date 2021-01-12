@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="../CSS/Main/main-mobile.css">
   <link rel="stylesheet" href="../CSS/Main/main-tablet.css">
   <link rel="stylesheet" href="../CSS/Main/main.css">
-  <link rel="stylesheet" href="../CSS/Discussions/discussions.css">
+  <link rel="stylesheet" href="../CSS/Question/question.css">
+
 
   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
@@ -19,96 +20,68 @@
   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
   <script src="../JS/app.js"></script>
   <script src="../JS/main.js"></script>
+  <script src="../JS/question.js"></script>
 
 </head>
 
 <body>
-  <div id="container">
-    <div id="top">
-      <div id="companyInfo">
-        <a href="profile.html" id = "profile"> Profile
-          <span> </span>
-          <span> </span>
-          <span> </span>
-          <span> </span>
-        </a>
-      </div>
-      <div id="navigation">
-        <ul>
-          <li><a href="main.html"> Main
-              <span> </span>
-              <span> </span>
-              <span> </span>
-              <span> </span>
-            </a>
-          </li>
-          <li><a href="books.html"> Books
-              <span> </span>
-              <span> </span>
-              <span> </span>
-              <span> </span>
-            </a>
-          </li>
-          <li><a href="discussions.html"> Discussions
-              <span> </span>
-              <span> </span>
-              <span> </span>
-              <span> </span>
-            </a>
-          </li>
-          <li><a href="futureReleases.html"> Future Releases
-              <span> </span>
-              <span> </span>
-              <span> </span>
-              <span> </span>
-            </a>
-          </li>
-          <li><a href="contacts.html"> Contact
-              <span> </span>
-              <span> </span>
-              <span> </span>
-              <span> </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div id = "middle">
 
-        <a id="addQuestion" href="addQuestion.html"> Add Question
-          <span> </span>
-          <span> </span>
-          <span> </span>
-          <span> </span>
-        </a>
+    <div id="container">
 
-    </div>
-    <div id="center">
+        <div id="navigation">
+          <ul>
+            <li><a href="addQuestion.html"> Go Back
+                <span> </span>
+                <span> </span>
+                <span> </span>
+                <span> </span>
+              </a>
+            </li>
 
-      <div class="topic-list" id="topic-list">
-        <div class="row" id="row">
-          <div class="row-container">
-            <div class="row-info">
-              <h4 class="question_author">Author</h4>
-              <h1 class="book-title">Book title</h1>
-              <p class="question">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it to make a type specimen book.
-              </p>
-            </div>
-          </div>
-
+            <li><a href="#" id="AddAnswer"> Add Answer
+                <span> </span>
+                <span> </span>
+                <span> </span>
+                <span> </span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+      <div id = "middle">
+
+        <div class="row-container">
+          <div class="row-info">
+            <h2 class="question_author">Author</h2>
+            <h1 class="book-title">Book title</h1>
+            <p class="question">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="center">
+
+        <div class="answer-list" id="answer-list">
+            <!-- Below is dummy text for  -->
+
+            <div class="answer-container">
+              <div class="answer-info">
+                <h1 class="answer_author">Author</h1>
+                <p class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+
 
     </div>
-
-
-    <footer id="footer">
-      <h6>© Copyright </h6>
-    </footer>
-  </div>
-
 
 </body>
 

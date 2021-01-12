@@ -1,3 +1,54 @@
+#login-message {
+  text-transform: uppercase;
+  color: crimson;
+  font-family: cursive;;
+}
+
+#backfix {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0,0,0,0.5);
+  z-index: 50;
+  display: none;
+}
+
+#login_bottom{
+  float: right;
+}
+
+
+#login_bottom button{
+  text-transform: uppercase;
+  padding: 10px;
+  background: crimson;
+  /* color: crimson; */
+  font-family: cursive;
+  border-radius: 7px;
+  color: #fcb;
+  font-size: 22px;
+}
+
+#login_bottom button:hover{
+  cursor: pointer;
+}
+
+
+#login-div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  border: 5px solid #023;
+  padding: 20px;
+  background: #fa9;
+  border-radius: 12px;
+  display: none;
+
+}
+
+
 #center {
   overflow: auto;
   height: 200vh;
@@ -11,9 +62,9 @@
   flex-flow: column;
 }
 
+
 #addQuestion{
   color: #fcb;
-  display: none;
 }
 
 #addQuestion:hover{
@@ -58,7 +109,7 @@
 }
 
 a:hover{
-  transform: scale(1.15);
+  transform: scale(1.05);
 }
 
 

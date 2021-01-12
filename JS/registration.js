@@ -1,9 +1,12 @@
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-    window.location.replace("main.html");
-  }
-});
 
+const auth = firebase.auth();
+
+function checkPasswordIsHardEnough(password){
+  return password.length >= 6;
+}
+
+
+// Function called
 
 function signUp() {
 
@@ -14,7 +17,7 @@ function signUp() {
 
   if(userPassword === userPasswordRepeat){
     if(checkPasswordIsHardEnough(userPassword)){
-        registerUser(userEmail, userPassword);
+        checkIfUserExistsAndRegister(userEmail, userPassword);
     } else {
       alert("Password too short. It should be at least 6 characters.")
     }
@@ -25,23 +28,46 @@ function signUp() {
 
 }
 
-function checkPasswordIsHardEnough(password){
-  return password.length >= 6;
+
+function checkIfUserExistsAndRegister(email, password) {
+  let username = document.getElementById("username").value;
+  let database = firebase.database().ref('Users');
+
+  database.child(username).once('value', snap => {
+    if(snap.exists()){
+      alert("Username already exists.");
+    } else {
+      alert("Username doesn't exists");
+      register(email, password, username, database);
+
+    }
+
+  });
+
 }
 
-function registerUser(email, password) {
-  let auth = firebase.auth();
-  let username = document.getElementById("username");
+function register(email, password, username, database){
+
   auth.createUserWithEmailAndPassword(email, password)
-  .then((user) => {
-    user.updateProfile({
-      displayName: userName
-    }).then(function() {
-      console.log("Update successful.");
-    }).catch(function() {
-      console.log("An Error Happened.");
+  .then((credentials) => {
+    let user = credentials.user;
+    console.log(user.uid);
+
+    database.child(username).set({
+
+        uid: user.uid,
+        email: email
+
     });
 
+
+    user.updateProfile({
+        displayName: username
+    }).then(function() {
+        console.log("Update successful.");
+    }).catch(function() {
+        console.log("An Error Happened.");
+    });
 
     window.location.replace("main.html");
   })
@@ -49,6 +75,6 @@ function registerUser(email, password) {
     var errorCode = error.code;
     var errorMessage = error.message;
     // ..
-    alert(errorMessage);
+    alert("Error: " + errorMessage);
   });
 }

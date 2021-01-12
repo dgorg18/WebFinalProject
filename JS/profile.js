@@ -4,28 +4,40 @@ let auth = firebase.auth();
 
 auth.onAuthStateChanged(function(user) {
     let loginDiv = document.getElementById("login-logout");
-    let center = document.getElementById("center");
+    let leftPart = document.getElementById('leftPart')
 
 
     if (user) {
 
       loginDiv.innerHTML = userLoggedIn();
+      leftPart.innerHTML = loggedInText(user.displayName);
       let logoutButton = document.getElementById('logout');
       logoutButton.onclick = function() {
             auth.signOut().then(() => {
               window.location.replace("main.html");
+            }).catch(() => {
+              alert("Couldn't sign out");
             });
       };
     } else {
-      loginDiv.innerHTML += userLoggedOut();
-      center.innerHTML += notLoggedInText();
+      loginDiv.innerHTML = userLoggedOut();
+      leftPart.innerHTML = notLoggedInText();
     }
 });
 
 function notLoggedInText() {
-
-  return `<h1 id="not-logged-in">You're not logged in.</h1>`;
+  return `<div id="not-logged-in">
+    <h1>You're not logged in.</h1>
+    <h2>Log in to access all services.</h2>
+      </div>`;
 };
+
+function loggedInText(username){
+  return `<div>
+    <h1>Hello,  ${username}.</h1>
+    <h2>You could log out, but do you want to?.</h2>
+      </div>`;
+}
 
 
 function userLoggedOut(){

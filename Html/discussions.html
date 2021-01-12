@@ -17,12 +17,27 @@
   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
   <!-- <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script> -->
   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-database.js"></script>
   <script src="../JS/app.js"></script>
   <script src="../JS/main.js"></script>
 
 </head>
 
 <body>
+
+
+    <div id="login-div">
+      <h1 id = "login-message">You have to be logged in to add question.</h1>
+      <div id = "login_bottom">
+        <button id = "loginButt">Login</button>
+        <button id = "cancelButt">Cancel</button>
+      </div>
+    </div>
+
+    <div id="backfix">
+    </div>
+    <!-- Everything above will not be visible -->
+
   <div id="container">
     <div id="top">
       <div id="companyInfo">
@@ -75,7 +90,7 @@
     </div>
     <div id = "middle">
 
-        <a id="addQuestion" href="addQuestion.html"> Add Question
+        <a id="addQuestion"> Add Question
           <span> </span>
           <span> </span>
           <span> </span>
@@ -86,7 +101,8 @@
     <div id="center">
 
       <div class="topic-list" id="topic-list">
-          <div class="row-container">
+          <!-- Below is dummy text for  -->
+          <!-- <div class="row-container">
             <div class="row-info">
               <h4 class="question_author">Author</h4>
               <h1 class="book-title">Book title</h1>
@@ -95,43 +111,7 @@
                 printer took a galley of type and scrambled it to make a type specimen book.
               </p>
             </div>
-          </div>
-
-          <div class="row-container">
-            <div class="row-info">
-              <h4 class="question_author">Author</h4>
-              <h1 class="book-title">Book title</h1>
-              <p class="question">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it to make a type specimen book.
-              </p>
-            </div>
-          </div>
-
-
-          <div class="row-container">
-            <div class="row-info">
-              <h4 class="question_author">Author</h4>
-              <h1 class="book-title">Book title</h1>
-              <p class="question">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it to make a type specimen book.
-              </p>
-            </div>
-          </div>
-
-
-
-          <div class="row-container">
-            <div class="row-info">
-              <h4 class="question_author">Author</h4>
-              <h1 class="book-title">Book title</h1>
-              <p class="question">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it to make a type specimen book.
-              </p>
-            </div>
-          </div>
+          </div> -->
 
       </div>
 

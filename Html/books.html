@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../CSS/Main/main-mobile.css">
   <link rel="stylesheet" href="../CSS/Main/main-tablet.css">
   <link rel="stylesheet" href="../CSS/Main/main.css">
+  <link rel="stylesheet" href="../CSS/Books/books-mobile.css">
   <link rel="stylesheet" href="../CSS/Books/books.css">
 
   <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
@@ -78,7 +79,7 @@
       <h1 id="search-title"> Some Books </h1>
       <div>
         <div class="searchBox">
-          <input type="text" placeholder="Search...">
+          <input id="searchBox" type="text" onfocusout="this.value='';" placeholder="Search...">
           <div class="search"></div>
         </div>
       </div>

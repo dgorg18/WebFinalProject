@@ -9,12 +9,16 @@ submitButton.onclick = function submitAction(){
     var user = firebase.auth().currentUser;
 
     console.log(user.uid);
-    questionRef.set({
-      userID: user.uid,
-      bookName: bookName,
-      question: question
-    });
+    if (user){
+        questionRef.set({
+          userID: user.uid,
+          userName: user.displayName,
+          bookName: bookName,
+          question: question
+        });
+    } else {
+      console.log("User not logged in.");
+      alert("Error occured. User not logged in.");
+    }
 
 };
-
-questionObj.on('value', snap =>  console.log(snap.val()));

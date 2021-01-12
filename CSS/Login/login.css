@@ -1,5 +1,5 @@
 html, body {
-  font-size: 20px;
+  font-size: 2.5vmin;
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
@@ -7,22 +7,26 @@ html, body {
   background-size: cover;
 }
 
-#container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+@media only screen and (max-width: 700px) {
+  #box {
+    width: 80vw;
+  }
+
 }
 
-#box a #goBack {
-  color: #0ff;
+@media only screen and (min-width: 700px) {
+  #box {
+    width: 50vw;
+  }
 }
+
+
 
 #box {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 30vw;
   padding: 10vmin;
   background: rgba(0, 0, 0, .8);
   box-sizing: border-box;
@@ -30,100 +34,103 @@ html, body {
   border-radius: 15px;
 }
 
-#box h2 {
-  margin: 0 0 5vmin;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-}
 
-#box .inputBox {
-  position: relative;
-}
 
-#box .inputBox input {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 4vmin;
-  color: #fff;
-  margin-bottom: 30px;
-  border: none;
-  outline: none;
-  background: transparent;
-}
+  #container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
 
-#box .inputBox label {
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 10px 0;
-  font-size: 4vmin;
-  color: #fff;
-  pointer-events: none;
-  transition: .5s;
-}
+  #box a #goBack {
+    color: #0ff;
+  }
 
-#box .inputBox input:focus~label,
-#box .inputBox input:valid~label
- {
-  left: 0;
-  top: -20px;
-  color: #03a9f5;
-  font-size: 3vmin;
-}
 
-#box #rightButtons {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
+  #box h2 {
+    margin: 0 0 5vmin;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
 
-#box #rightButtons * {
-  display: block;
-}
+  #box .inputBox {
+    position: relative;
+  }
 
-#box button {
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 4vmin;
-  color: #fff;
-  background: #023;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 10px;
-}
+  #box .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 2vmin;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
 
-#box #signUpButton {
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 4vmin;
-  color: #fff;
-  background: #023;
-  text-decoration: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 10px;
-}
+  #box .inputBox label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 0;
+    font-size: 4vmin;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
 
-#box a {
-  font-size: 3vmin;
-  color: #0fffff;
-  text-decoration: none;
-}
+  #box .inputBox input:focus~label,
+  #box .inputBox input:valid~label
+   {
+    left: 0;
+    top: -30px;
+    color: #03a9f5;
+    font-size: 2vmin;
+  }
 
-#box a:hover {
-  color: #a00;
-  cursor: pointer;
-}
+  #box #rightButtons {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
 
-#footer {
-  height: 10vh;
-  position: fixed;
-  bottom: 10%;
-  margin: 0px 25px;
-  color: red;
-  flex-flow: row-reverse nowrap;
-  justify-content: flex-start;
-}
+  #box #rightButtons * {
+    display: block;
+  }
+
+  #box button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 3vmin;
+    color: #fff;
+    background: #023;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  #box #signUpButton {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 4vmin;
+    color: #fff;
+    background: #023;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  #box a {
+    font-size: 3vmin;
+    color: #0fffff;
+    text-decoration: none;
+  }
+
+  #box a:hover {
+    color: #a00;
+    cursor: pointer;
+  }

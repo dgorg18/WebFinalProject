@@ -1,63 +1,66 @@
+@media only screen and (max-width: 700px) {
+  #box {
+    width: 100vw;
+  }
 
-#box {
-  height: 90vh;
-  width: 400px;
 }
 
-#box #rightButtons {
+@media only screen and (min-width: 700px) {
 
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
+  #container {
+    height: 100vh;
+  }
 
-  display: flex;
-  flex-flow: row nowrap;
-}
+  #box {
+    height: 80vh;
+    width: 60vw;
+  }
 
-#box button
-{
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  color: #fff;
-  background: #023;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-#box #signInButton{
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  color: #fff;
-  background: #023;
-  text-decoration: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 10px;
-}
+  #box #rightButtons {
 
-#box a{
-  font-size: 12px;
-  color: #0fffff;
-  text-decoration: none;
-}
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 
-#box a:hover{
-  color: #a00;
-  cursor: pointer;
-}
+    display: flex;
+    flex-flow: row nowrap;
+  }
 
+  #box button
+  {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 2vmin;
+    color: #fff;
+    background: #023;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  #box #signInButton{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 2vmin;
+    color: #fff;
+    background: #023;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
 
-#footer {
-  height: 50px;
-  position: fixed;
-  bottom: 10%;
-  margin: 0px 25px;
-  color: red;
-  flex-flow: row-reverse nowrap;
-  justify-content: flex-start;
+  #box a{
+    font-size: 1.5vmin;
+    color: #0fffff;
+    text-decoration: none;
+  }
+
+  #box a:hover{
+    color: #a00;
+    cursor: pointer;
+  }
+
 
 }

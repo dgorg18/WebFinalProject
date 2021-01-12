@@ -1,21 +1,43 @@
-#center {
-  height: 80vh;
+#leftPart {
+  height: 100%;
+  width: 80vw;
+  align-self: flex-start;
   display: flex;
   flex-flow: column nowrap;
   align-content: center;
-  align-items: flex-start;
+  justify-content: center;
+}
+
+#leftPart h1{
+  font-family: cursive;
+  color: crimson;
+}
+
+
+#leftPart h2{
+  font-family: cursive;
+
+  color: #cec;
+}
+
+
+#center{
+  height: 90vh;
 }
 
 
 #login-logout{
+  height: 100%;
   display: flex;
   flex-flow: column nowrap;
-  align-self: flex-end;
+  align-content: center;
+  justify-content: center;
 }
 
 #logout {
   color: #fcb;
 }
+
 #login-logout #login,
 #login-logout #register{
     animation-name: flash;
