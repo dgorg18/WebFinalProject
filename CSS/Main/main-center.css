@@ -1,0 +1,93 @@
+
+.toggle {
+  display: flex;
+  flex-direction: row;
+}
+
+.toggle input {
+    display: none;
+}
+.toggle input#toggle-1:checked ~ .label-1 {
+  width: 7vw;
+}
+.toggle input#toggle-2:checked ~ .label-2 {
+  width: 7vw;
+}
+
+.toggle input#toggle-3:checked ~ .label-3 {
+  width: 7vw;
+}
+
+.toggle input#toggle-4:checked ~ .label-4 {
+  width: 7vw;
+}
+
+.toggle input#toggle-5:checked ~ .label-5 {
+  width: 7vw;
+}
+
+.toggle label {
+  width: 5vw;
+  height: 4vh;
+  margin: 0 1vw;
+  border-radius: 1000px;
+  background: crimson;
+  cursor: pointer;
+  transition: 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fcb;
+  padding: 10px;
+}
+
+
+
+#center {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#centerInfo {
+  height: 80%;
+  width: 80%;
+  border-radius: 40px;
+  padding: 2vmin;
+  background: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#center-main h1{
+  margin-top: 0;
+  color: crimson;
+  font-family: cursive;
+}
+
+#centerInfo h1{
+  color: #cec;
+  font-size: 7vmin;
+}
+
+
+#pagination {
+  margin: 20px;
+}
+
+#center-main {
+  height: 100%;
+  width: 60%;
+  padding: 10px;
+  border-radius: 40px;
+  border: 3px dashed crimson;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
